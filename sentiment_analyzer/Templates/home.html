@@ -1,0 +1,61 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment Analyser</title>
+	<link rel="stylesheet" type="text/css" href={% static 'css/main.css' %}>
+</head>
+<style type="text/css">
+	*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+H1{
+	position: absolute;
+	top: 10%;
+	left: 18%;
+	color: white;
+	font: 1.2em "Fira Sans", sans-serif;
+	font-size: 70px;
+}
+H2{
+	position: absolute;
+	top: 95%;
+	left: 40%;
+	color: black;
+	font: 1.2em "Fira Sans", sans-serif;
+	font-size: 20px;
+	opacity: 0.5;
+}
+body{
+  background: #36486b;
+}
+.main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+input{
+	border:white;
+	height: 60px;
+	width: 700px;
+	border-radius:50px;
+	padding: 0px 10px;
+	box-shadow: none;
+	outline: none;
+}
+</style>
+<body>
+	<H1>Welcome to sentiment analyzer</H1>
+	<H2>Make sure your internet is turned on</H2>
+	<div class="main">
+<form action="getchart">
+<input type="text" placeholder="Enter keyword and press enter" name="term">
+</form>	
+<i class="fa fa-search" aria-hidden="true"></i>
+	</div>
+</body>
+</html>>
