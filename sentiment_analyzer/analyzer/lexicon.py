@@ -9,10 +9,10 @@ today = date.today()
 print(today)
 
 def get_sentiments(search_term):
-	consumer_key = '1o3lLkjCh4Agn0CYXEIksEzbd'
-	consumer_secret = '3qSeXizsz2LkR9ZUOdgHcjzpkTpz7zbnELoXI8G92R4Jm3E9y4'
-	access_token = '3289885325-gFG44n98E8JW12vIkq177hIrG7KvacIvwiIjPcX'
-	access_token_secret = 'WyJ96v1tjFJrQqkx6ItKDd3gO4XD2lsoPrhj4ouJvbkT5'
+	consumer_key = 'YOUR_CONSUMER_KEY'
+	consumer_secret = 'YOUR_CONSUMER_SECRET_KEY'
+	access_token = 'YOUR_ACCESS_TOKEN'
+	access_token_secret ='YOUR_ACCESS_TOKEN_SECRET_KEY'
 
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_token, access_token_secret)
