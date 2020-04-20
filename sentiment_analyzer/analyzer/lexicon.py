@@ -43,7 +43,7 @@ def get_sentiments(search_term):
 	data['Compound'] = df['compound']
 
 
-	data.to_csv(f'C:\\Users\\Asus\\Desktop\\sentiment_analyzer\\Data\\{today}_data.csv')
+	data.to_csv(f'{today}_data.csv')
 	total_neg = 0
 	total_neu = 0
 	total_pos = 0
